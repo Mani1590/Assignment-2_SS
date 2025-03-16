@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./landing_page.css">
+    <link rel="icon" href="./images/5.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Super Bikes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bikes">Popular Bikes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#details">Customer Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bill">Bill</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Customer Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div id="showroom" class="container">
+            <img src="./images/image.png" alt="Bike Showroom">
+            <div class="showroom-text">
+                <p>
+                    Experience the ultimate freedom with our high-performance bikes, designed to give you the perfect balance of speed, comfort, and durability.
+                    Whether you're cruising through city streets or exploring rugged terrains, our bikes are built to handle it all with ease. Ride with confidence and style!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bikes" class="container mt-4">
+        <h2 class="text-center">Popular Bikes</h2>
+        <div id="bikeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./images/2.png" class="img-fluid" alt="BMW 310 GS" width="400">
+                    <h3>BMW 310 GS</h3>
+                    <p><strong>Engine Type:</strong> 313cc, single-cylinder, liquid-cooled, DOHC</p>
+                    <p><strong>Top Speed:</strong> ~143 km/h (89 mph)</p>
+                    <p><strong>Seat Height:</strong> 835 mm (adjustable options available)</p>
+                    <p><strong>Fuel Tank Capacity:</strong> 11 liters</p>
+                    <p><strong>Weight:</strong> ~175 kg (fully fueled)</p>
+                    <p><strong>ABS:</strong> Standard dual-channel ABS</p>
+                    <p><strong>Prices:</strong> ₹3.03 lakhs</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/3.png" class="img-fluid" alt="Triumph Scrambler 400 X" width="400">
+                    <h3>Triumph Scrambler 400 X</h3>
+                    <p><strong>Engine Type:</strong> 398cc, single-cylinder, liquid-cooled, DOHC</p>
+                    <p><strong>Top Speed:</strong> ~150 km/h (93 mph)</p>
+                    <p><strong>Seat Height:</strong> 835 mm</p>
+                    <p><strong>Fuel Tank Capacity:</strong> 13 liters</p>
+                    <p><strong>Weight:</strong> ~179 kg (fully fueled)</p>
+                    <p><strong>ABS:</strong> Dual-channel switchable ABS</p>
+                    <p><strong>Prices:</strong> ₹2.92 lakhs</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/4.png" class="img-fluid" alt="Royal Enfield Continental GT 650" width="400">
+                    <h3>Royal Enfield Continental GT 650</h3>
+                    <p><strong>Engine Type:</strong> 648cc, parallel-twin, air/oil-cooled, SOHC</p>
+                    <p><strong>Top Speed:</strong> ~170 km/h (106 mph)</p>
+                    <p><strong>Seat Height:</strong> 810 mm</p>
+                    <p><strong>Fuel Tank Capacity:</strong> 12.5 liters</p>
+                    <p><strong>Weight:</strong> ~214 kg (fully fueled)</p>
+                    <p><strong>ABS:</strong> Dual-channel ABS</p>
+                    <p><strong>Prices:</strong> ₹4.04 lakhs</p>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#bikeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bikeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="details">
+        <section id="customer-details">
+            <h2>Customer Details</h2>
+            <form action="#bill" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name">
+                <br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                <br><br>
+                
+                <label for="date" id="date">Date of Taken:</label>
+                <input type="date" id="date" name="date">
+                <br><br>
+                
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="2" ></textarea>
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </section>
+
+    <section id="bill">
+        <h2>Bill Details</h2>
+        <form action="#feedback" method="post">
+            <label for="bike-name">Bike Name:</label>
+            <input type="text" id="bike-name" name="bike-name">
+            <br><br>
+            
+            <label for="person-name">Person Name:</label>
+            <input type="text" id="person-name" name="person-name">
+            <br><br>
+            
+            <label for="driving-license">Driving License:</label>
+            <input type="text" id="driving-license" name="driving-license">
+            <br><br>
+            
+            <label for="aadhar-no">Aadhar Number:</label>
+            <input type="text" id="aadhar-no" name="aadhar-no">
+            <br><br>
+            
+            <label for="payment-mode" id="payment-mode">Mode of Payment:</label>
+            <select id="payment-mode" name="payment-mode" >
+                <option value="cash">Cash</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="upi">UPI</option>
+            </select>
+            <br><br>
+            
+            <button type="submit">Generate Bill</button>
+            <br><br>
+        </form>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <blockquote>"Absolutely amazing! The quality exceeded my expectations." - Emily R.</blockquote>
+        <blockquote>"Fast delivery and fantastic customer service. Will buy again!" - James L.</blockquote>
+        <blockquote>"This product is a game-changer! Highly recommended." - Sophia M.</blockquote>
+        <blockquote>"Incredible experience from start to finish. Worth every penny!" - Daniel K.</blockquote>
+    </section>
+    <br>
+
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <form action="#home" method="post">
+            <label for="customer-name">Full Name:</label>
+            <input type="text" id="customer-name" name="customer-name">
+            <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="2"></textarea>
+            <br><br>
+            
+            <label for="rating" id="rating">Rating:</label>
+            <select id="rating" name="rating">
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Fair</option>
+                <option value="1">1 - Poor</option>
+            </select>
+            <br><br>
+
+            <button type="submit">Submit Feedback</button>
+            <br><br>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <p><strong>Contact us:</strong> email@example.com</p>
+        <p><strong>Phone No: </strong>+91 12345 67890</p>
+        <p><strong>Telephone No: </strong>2154542</p>
+        <p>Follow us on social media:</p>
+        <ul>
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

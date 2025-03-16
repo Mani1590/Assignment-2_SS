@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?tech,conference') no-repeat center center/cover;
+    height: 85vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.event-details {
+    background: #f4f4f4;
+    padding: 50px 20px;
+}
+.event-details i {
+    font-size: 35px;
+    color: #007bff;
+}
+
+.schedule {
+    background: #e9ecef;
+    padding: 60px 20px;
+}
+.timeline {
+    position: relative;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 5px;
+    background: #007bff;
+    margin-left: -1.5px;
+}
+.timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+}
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+.timeline-badge {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+.register {
+    padding: 50px 20px;
+    background: #ffffff;
+}
+.register .form-control {
+    border-radius: 8px;
+    border: 1px solid #007bff;
+}
+.register .btn {
+    background: #007bff;
+    border: none;
+    border-radius: 8px;
+}
+
+.footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer a {
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+}

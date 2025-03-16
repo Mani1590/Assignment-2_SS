@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./recipe.css">
+    <link rel="icon" href="./images/image.png">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Delicious Recipes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#recipes">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Submit Recipe</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header" id="home">
+        <h1>Welcome to Delicious Recipes</h1>
+        <p>Find & Share Amazing Recipes</p>
+    </div>
+
+    <div class="container my-5" id="recipes">
+        <h2 class="text-center mb-4">Our Best Recipes</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card recipe-card">
+                    <img src="./images/2.png" class="card-img-top" alt="Pasta" height="350">
+                    <div class="card-body">
+                        <h5 class="card-title">Creamy Garlic Pasta</h5>
+                        <p class="card-text"><strong>Ingredients:</strong> Pasta, Garlic, Cream, Parmesan</p>
+                        <p class="card-text"><strong>Instructions:</strong> Cook pasta, mix with garlic cream sauce, and serve hot.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card recipe-card">
+                    <img src="./images/1.png" class="card-img-top" alt="Burger"  height="350">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Beef Burger</h5>
+                        <p class="card-text"><strong>Ingredients:</strong> Beef patty, Buns, Cheese, Lettuce</p>
+                        <p class="card-text"><strong>Instructions:</strong> Grill beef patty, place in bun with toppings, and enjoy!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card recipe-card">
+                    <img src="./images/3.png" class="card-img-top" alt="Pizza" height="350">
+                    <div class="card-body">
+                        <h5 class="card-title">Homemade Margherita Pizza</h5>
+                        <p class="card-text"><strong>Ingredients:</strong> Dough, Tomato Sauce, Mozzarella, Basil</p>
+                        <p class="card-text"><strong>Instructions:</strong> Spread sauce on dough, add cheese and basil, bake.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card recipe-card">
+                    <img src="./images/4.png" class="card-img-top" alt="Salad" height="350">
+                    <div class="card-body">
+                        <h5 class="card-title">Healthy Green Salad</h5>
+                        <p class="card-text"><strong>Ingredients:</strong> Lettuce, Cucumber, Avocado, Dressing</p>
+                        <p class="card-text"><strong>Instructions:</strong> Chop veggies, mix, and drizzle with dressing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card recipe-card">
+                    <img src="./images/5.png" class="card-img-top" alt="Cake" height="350">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Cake</h5>
+                        <p class="card-text"><strong>Ingredients:</strong> Flour, Cocoa, Sugar, Eggs</p>
+                        <p class="card-text"><strong>Instructions:</strong> Mix ingredients, bake at 180°C for 30 minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories" id="categories">
+        <h2>Recipe Categories</h2>
+        
+        <h4>Breakfast</h4>
+        <ul class="category-list">
+            <li>Idli</li>
+            <li>Omelette</li>
+            <li>Onion Dosa</li>
+            <li>Poori</li>
+            <li>Rava Upma</li>
+        </ul>
+    
+        <h4>Lunch</h4>
+        <ul class="category-list">
+            <li>Grilled Chicken Salad</li>
+            <li>Vegetable Stir Fry</li>
+            <li>Spaghetti Bolognese</li>
+            <li>Club Sandwich</li>
+            <li>Rice & Beans</li>
+        </ul>
+    
+        <h4>Snacks</h4>
+        <ul class="category-list">
+            <li>Nachos with Cheese</li>
+            <li>Popcorn</li>
+            <li>Veggie Wrap</li>
+            <li>Hummus with Pita Bread</li>
+            <li>Cheese Crackers</li>
+        </ul>
+    
+        <h4>Desserts</h4>
+        <ul class="category-list">
+            <li>Chocolate Cake</li>
+            <li>Vanilla Ice Cream</li>
+            <li>Strawberry Cheesecake</li>
+            <li>Apple Pie</li>
+            <li>Brownies</li>
+        </ul>
+
+        <h4>Dinner</h4>
+        <ul class="category-list">
+            <li>Grilled Salmon</li>
+            <li>Homemade Margherita Pizza</li>
+            <li>Beef Stroganoff</li>
+            <li>Stuffed Bell Peppers</li>
+            <li>Butter Chicken</li>
+        </ul>
+    </div>
+
+    <div class="container my-5" id="contact">
+        <h2 class="text-center">Submit Your Recipe</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="contact-form" action="#home">
+                    <div class="mb-3">
+                        <label class="form-label">Your Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Recipe Name</label>
+                        <input type="text" class="form-control" placeholder="Recipe title">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Ingredients</label>
+                        <textarea class="form-control" rows="3" placeholder="List ingredients..."></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Instructions</label>
+                        <textarea class="form-control" rows="4" placeholder="Describe the steps..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger w-100">Submit Recipe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
