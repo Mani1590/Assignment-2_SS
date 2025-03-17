@@ -43,6 +43,45 @@ body {
     padding: 50px;
 }
 
+#photo-cards {
+    background-color: #6d8aa19e;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
 .contact-form {
     max-width: 500px;
     background: white;
